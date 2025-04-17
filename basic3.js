@@ -88,3 +88,18 @@ let sumValue = scores1.filter(score=>score%2==0).map(score=>score*3).reduce((sum
 console.log(sumValue)
 
 //******sorting***** two sort in array one for string and another one for number
+let fruits = ["banana","orange","grapes","apple"]
+console.log(fruits.sort())   //this sort method only sort the string
+// reverse the sorted string
+console.log(fruits.reverse())
+
+// sorting the number
+var numSort = [15,13,3.43,11,16,12,14]
+//console.log(numSort.sort())
+
+/*numSort.sort(function(a,b)
+{
+    return a-b
+})*/
+console.log(numSort.sort((a,b)=>a-b))
+console.log(numSort.sort((a,b)=>b-a))  //accending order
