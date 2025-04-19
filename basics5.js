@@ -1,4 +1,7 @@
-//String
+// inport class file basics7
+const Person= require('./basics7')  // we exporting the class to catch this class we create one valirable 
+
+//String --basics5 class start from here
 
 let day = 'tuesday '  // we wright string in "" or '' doesn't matter
 
@@ -46,6 +49,10 @@ let count =0
         value = newQuote.indexOf("day", value+1)
 
     }
-    console.log(count)
+    console.log(count)   // file basics5 end here
+
+//create an object of imported class - basics7 file
+let person= new Person("Mark", " Wood")
+console.log(person.fullName())
 
 
